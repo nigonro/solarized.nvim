@@ -63,8 +63,8 @@ return function(c, config)
 	-- set_hl('@field', { fg = c.blue }) -- object and struct fields
 	-- set_hl('@property', { link = '@field' }) -- similar to `@field`
 	--
-	-- set_hl('@variable', { link = 'Identifier' }) -- various variable names
-	-- set_hl('@variable.builtin', { link = 'Identifier' }) -- built-in variable names (e.g. `this`)
+	set_hl("@variable", { link = "Identifier" }) -- various variable names
+	set_hl("@variable.builtin", { link = "Identifier" }) -- built-in variable names (e.g. `this`)
 	--
 	-- set_hl('@constant', { link = 'Constant' }) -- constant identifiers
 	-- set_hl('@constant.builtin', { link = 'Constant' }) -- built-in constant values
