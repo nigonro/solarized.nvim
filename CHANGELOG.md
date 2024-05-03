@@ -1,5 +1,61 @@
 # Changelog
 
+## [2.0.0](https://github.com/nigonro/solarized.nvim/compare/v1.0.5...v2.0.0) (2024-05-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* **palette:** Removal of base04
+    - Integrated Selenized color palette into the project.
+* The highlight and colors callbacks now accept only two parameters, colors and colorhelper table.
+
+### Features
+
+* .gitignore removed ([9c0b4df](https://github.com/nigonro/solarized.nvim/commit/9c0b4df1e89ee6a11ab1104bfc8d139b0a7cdc1d))
+* Add support for nvim-notify in colorscheme ([221eb6b](https://github.com/nigonro/solarized.nvim/commit/221eb6b54533fbeb2bf88daa4b521ecd4d2b4fe4))
+* Add support for packer.nvim in colorscheme ([55cbf08](https://github.com/nigonro/solarized.nvim/commit/55cbf080cc611b83a101d179cd6fb0619036ec35))
+* allows dynamic themes based on folder name ([3184771](https://github.com/nigonro/solarized.nvim/commit/3184771f2243f568a1077c3781bd6d50d76f9613))
+* barbecue ([f4ce3ac](https://github.com/nigonro/solarized.nvim/commit/f4ce3acaadf96d5828acceea7796c1d996ca278f))
+* extras highlight token ([c8bf2c7](https://github.com/nigonro/solarized.nvim/commit/c8bf2c772ffa3083cd20eb48877700751e392f11))
+* github workflows, vusted, stylua ([5ba2772](https://github.com/nigonro/solarized.nvim/commit/5ba27720c7f9104c1ab08bcab54ff33c6dbf2385))
+* highlights for todo.nvim ([03ed617](https://github.com/nigonro/solarized.nvim/commit/03ed617b297497dd2be9e42c253ee3b9d28d9df2))
+* hl for noice-progress ([2e4ac32](https://github.com/nigonro/solarized.nvim/commit/2e4ac324a815d54f8e852c6a3abdee4417da7912))
+* lazy ([4443451](https://github.com/nigonro/solarized.nvim/commit/4443451e6fda256363dd3031654d565f2116a544))
+* lazy, packer hl groups ([5f155d9](https://github.com/nigonro/solarized.nvim/commit/5f155d9991c23690e615e6c1e1484547ce2e697e))
+* neogit ([ec197de](https://github.com/nigonro/solarized.nvim/commit/ec197de5cc22911a78d9d9224071118654bf64b8))
+* neorg hl ([b4dbaaa](https://github.com/nigonro/solarized.nvim/commit/b4dbaaa35457e6d824c9d5334c17596d4995d009))
+* **palette:** Add support for Selenized color palette ([df9c1c9](https://github.com/nigonro/solarized.nvim/commit/df9c1c9fca6296cf0f6f783a74ffcc1425682403))
+* utils.math removed, colors hsl func removed, improv darken,lighten ([d0f356a](https://github.com/nigonro/solarized.nvim/commit/d0f356a63cbf945c31c831792aa26a8139e35a70))
+* vim-sneak ([84bfe3b](https://github.com/nigonro/solarized.nvim/commit/84bfe3b44cfecb00d4bf45809cab7b0f48791cae))
+* zen-mode ([d8d9051](https://github.com/nigonro/solarized.nvim/commit/d8d90510d2f798a40333e9c334819896b035d56c))
+
+
+### Bug Fixes
+
+* base03 color ([9567554](https://github.com/nigonro/solarized.nvim/commit/95675548f7ed9d615e38c9ea747ddb91d559fec3))
+* check if neovim is nightly to load advanced hl ([0963ad8](https://github.com/nigonro/solarized.nvim/commit/0963ad836bbf038fe774b7fa21a7f7b49daee916))
+* color search,visual,telescope,winseparator ([ce004ce](https://github.com/nigonro/solarized.nvim/commit/ce004ce2905b8b59f2068069fb3fccc7475d491d))
+* colorcolumn, incsearch, floatborder ([7b0181d](https://github.com/nigonro/solarized.nvim/commit/7b0181d72f9f1ebc5647592c0a04e31976b2b86b))
+* Configuring highlight of type "variable" [#69](https://github.com/nigonro/solarized.nvim/issues/69) ([5ba2772](https://github.com/nigonro/solarized.nvim/commit/5ba27720c7f9104c1ab08bcab54ff33c6dbf2385))
+* fixes nofrils theme after rebase ([75a0057](https://github.com/nigonro/solarized.nvim/commit/75a0057ad2ab8166b9f14b4ee6a486d80b3fd536))
+* indentblankline, whitespace, treesitter text hl ([76de882](https://github.com/nigonro/solarized.nvim/commit/76de8824aa2d64b4bce5041f06ef8ebe1848d9a4))
+* inlay-hint ([784c699](https://github.com/nigonro/solarized.nvim/commit/784c699b3580db65a7cd9868effb1a25bd2895e9))
+* invalid color ([67ce0bb](https://github.com/nigonro/solarized.nvim/commit/67ce0bb2c31d811ed83cb5d23b179be55dd9d263))
+* jsx tags,  methods being italized, incsearch low contrast ([1555e0e](https://github.com/nigonro/solarized.nvim/commit/1555e0e02ba2c932537db2eff4576179acf0d2d6))
+* LspInlayHint foreground color on light mode ([54a7b79](https://github.com/nigonro/solarized.nvim/commit/54a7b797b1148b6ccab7538112e00d05db01c2c0))
+* neo editor winseparator ([54430f0](https://github.com/nigonro/solarized.nvim/commit/54430f0084956e7fd0914d2f658020aa514f0aab))
+* neovim - signcolumn bg ([7357e0e](https://github.com/nigonro/solarized.nvim/commit/7357e0e366c8360f90bb43a3ead9d7744e65de04))
+* solarized setup ([1e8b2e7](https://github.com/nigonro/solarized.nvim/commit/1e8b2e7afd90d9e479f3918051ba28a9f8fb2a50))
+* telescope selection ([690c24b](https://github.com/nigonro/solarized.nvim/commit/690c24b47a61ba49290e8749dc873b2510e47375))
+* tests ([9c0b4df](https://github.com/nigonro/solarized.nvim/commit/9c0b4df1e89ee6a11ab1104bfc8d139b0a7cdc1d))
+* treesitter parameter style was not being overridden by config ([2f59f9d](https://github.com/nigonro/solarized.nvim/commit/2f59f9d152a0d7f89c65c70105a5ae5803e28023))
+* vscode_theme ([b6cd0ff](https://github.com/nigonro/solarized.nvim/commit/b6cd0ffc4667a10fa704ffa053066f5253d1f349))
+
+
+### Code Refactoring
+
+* Update Solarized Theme ([f076342](https://github.com/nigonro/solarized.nvim/commit/f0763424b368ae7878d5aef33f5d1487c8fd2133))
+
 ## [2.3.0](https://github.com/maxmx03/solarized.nvim/compare/v2.2.0...v2.3.0) (2024-03-28)
 
 
