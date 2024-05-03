@@ -43,12 +43,9 @@ end
 --- @param colors table   A table containing color values
 --- @param config table   A table containing configuration options
 function M.highlights(colors, config)
-  if config.theme == 'neo' or config.theme == 'default' then
-    M.load_plugins(colors, config)
-  else
-    config.theme = 'default'
-    M.load_plugins(colors, config)
-  end
+  if not utils.isdir(config.theme) then config.theme = 'default' end
+
+  M.load_plugins(colors, config)
 
   if vim.fn.has('nvim-0.9.4') and config.autocmd then
     local extras = require('solarized.autocmd')
