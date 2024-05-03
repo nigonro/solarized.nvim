@@ -1,5 +1,6 @@
 local utils = require('solarized.utils')
 local colorhelper = require('solarized.utils.colors')
+local fs = require('solarized.utils.fs')
 
 local M = {}
 
@@ -43,8 +44,6 @@ end
 --- @param colors table   A table containing color values
 --- @param config table   A table containing configuration options
 function M.highlights(colors, config)
-  if not utils.isdir(config.theme) then config.theme = 'default' end
-
   M.load_plugins(colors, config)
 
   if vim.fn.has('nvim-0.9.4') and config.autocmd then

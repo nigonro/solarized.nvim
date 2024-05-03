@@ -3,7 +3,7 @@ local M = {}
 --- Check if a file or directory exists in this path
 ---
 --- @param file string   The filename to check for existence
-function exists(file)
+function M.exists(file)
   local ok, err, code = os.rename(file, file)
   if not ok then
     if code == 13 then
@@ -11,6 +11,8 @@ function exists(file)
       return true
     end
   end
+
+  vim.notify(err, vim.log.levels.ERROR)
   return ok, err
 end
 
@@ -18,9 +20,10 @@ end
 ---
 --- @param path string   The folder to check for existence
 --- @return boolean
-function isdir(path)
+function M.isdir(path)
   -- "/" works on both Unix and Windows
-  return exists(path .. '/')
+  vim.notify(path, vim.log.levels.INFO)
+  return M.exists(path .. '/')
 end
 
 return M
